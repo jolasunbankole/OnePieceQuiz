@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="Quiz"
+            type="com.example.onepiecequiz.FragmentQuestions" />
+
+    </data>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/luffy"
+    tools:context=".FragmentMainScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/one_piece_quiz"
+        android:textAllCaps="true"
+        android:textColor="#FA1100"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:translationY="-200dp" />
+
+    <TextView
+        android:id="@+id/Questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-110dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="Hello"
+        android:text="@{Quiz.currentQuestion.theQuestions}"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/Answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:translationY="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="Hello"
+        android:text="@{Quiz.answers[0]}"
+        android:textStyle="bold"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:id="@+id/Answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:translationY="100dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="Hello"
+        android:text="@{Quiz.answers[1]}"
+        android:textStyle="bold"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:id="@+id/Answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:translationY="150dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="Hello"
+        android:text="@{Quiz.answers[2]}"
+        android:textStyle="bold"
+        android:textSize="19sp"/>
+
+
+
+</LinearLayout>
+
+
+</layout>

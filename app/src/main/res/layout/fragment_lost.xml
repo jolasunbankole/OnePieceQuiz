@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F36897"
+        android:orientation="vertical"
+        tools:context=".FragmentLost">
+
+
+    <TextView
+        android:id="@+id/loser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_ve_lost"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="55dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="625dp"
+            android:contentDescription="@string/lose"
+            android:src="@drawable/foxy" />
+
+        <TextView
+            android:id="@+id/loser2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/hello_world"
+            tools:text="hello"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:translationY="-100dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:translationY="-80dp"
+            android:translationX="160dp"/>
+
+
+
+    </LinearLayout>
+</layout>

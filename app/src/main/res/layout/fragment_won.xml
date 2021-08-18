@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:src="@drawable/gol_d_roger"
+        android:background="@color/teal_200"
+        android:orientation="vertical"
+        tools:context=".FragmentWon">
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/you_ve_won"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="-85dp"
+            tools:text="you've won" />
+
+        <ImageView
+            android:id="@+id/TheKing"
+            android:layout_width="match_parent"
+            android:layout_height="209dp"
+            android:contentDescription="@string/king"
+            android:src="@drawable/gol_d_roger" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/kingOfPi"
+            android:textStyle="bold"
+            android:translationY="70dp"
+            android:gravity="center"
+            tools:text="you are the king of pirates"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:translationY="100dp"/>
+
+
+    </LinearLayout>
+</layout>
+
+
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/fragmentMainScreen">
+
+    <fragment
+        android:id="@+id/fragmentMainScreen"
+        android:name="com.example.onepiecequiz.FragmentMainScreen"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_fragmentMainScreen_to_fragmentQuestions"
+            app:destination="@id/fragmentQuestions" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuestions"
+        android:name="com.example.onepiecequiz.FragmentQuestions"
+        android:label="fragment_questions"
+        tools:layout="@layout/fragment_questions" >
+        <action
+            android:id="@+id/action_fragmentQuestions_to_fragmentWon"
+            app:destination="@id/fragmentWon" />
+        <action
+            android:id="@+id/action_fragmentQuestions_to_fragmentLost"
+            app:destination="@id/fragmentLost" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWon"
+        android:name="com.example.onepiecequiz.FragmentWon"
+        android:label="FragmentWon"
+        tools:layout="@layout/fragment_won">
+        <action
+            android:id="@+id/action_fragmentWon_to_fragmentMainScreen"
+            app:destination="@id/fragmentMainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLost"
+        android:name="com.example.onepiecequiz.FragmentLost"
+        android:label="fragment_lost"
+        tools:layout="@layout/fragment_lost" >
+        <action
+            android:id="@+id/action_fragmentLost_to_fragmentMainScreen"
+            app:destination="@id/fragmentMainScreen" />
+    </fragment>
+</navigation>
