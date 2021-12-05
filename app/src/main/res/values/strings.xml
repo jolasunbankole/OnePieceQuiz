@@ -1,11 +1,12 @@
 <resources>
+    <string name="app_name">OPQ</string>
 
     <string name="one_piece_quiz">One Piece Quiz</string>
     <string name="Start">Start Quiz</string>
 
     //The text in the textView2
     <string name="TextView2">
-    Welcome travellers on your journey to either become the king of pirates or a side character, this quiz will challenge even the most hardcore, one piece lovers, on their knowledge about the beautiful lore of the grand line. Each game will be 6 questions then results will be dished out in the form of 3 different images, (Pandaman, Supernova, Yonko, Pirate king)
+    Welcome travellers on your journey to either become the king of pirates or a side character, this quiz will challenge even the most hardcore, one piece lovers, on their knowledge about the beautiful lore of the grand line. Each game will be 6 questions then results will be dished out in the form of 3 different images, (Foxy Pirate, Pirate king)
     Don’t cheat and have fun, thanks for playing with my app.
     </string>
     <!-- TODO: Remove or change this placeholder text -->
